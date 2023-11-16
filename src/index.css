@@ -79,7 +79,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .cta-text {
-    @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+    @apply text-gray-300 font-extrabold flex-1 text-3xl max-md:text-center;
   }
 }
 
@@ -186,6 +186,7 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #a6e4fa, 1vmin 1vmin #f5a9b8,
     1vmin 1vmin #f5a9b8, 0.65vmin 1vmin #f5a9b8, 1vmin 0.65vmin #f5a9b8;
+  border-radius: 12px;
 }
 
 

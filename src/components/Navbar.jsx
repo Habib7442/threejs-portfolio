@@ -29,6 +29,15 @@ const Navbar = () => {
           👩🏻‍💻
         </NavLink>
         <NavLink
+          to="/about"
+          style={{fontFamily: "Old London"}}
+          className={({ isActive }) =>
+            isActive ? "text-blue-500" : "text-black"
+          }
+        >
+          😐
+        </NavLink>
+        <NavLink
           to="/all-reviews"
           style={{fontFamily: "Old London"}}
           className={({ isActive }) =>

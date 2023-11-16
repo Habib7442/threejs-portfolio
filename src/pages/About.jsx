@@ -8,8 +8,8 @@ import BallCanvas from "../models/Ball";
 import CTA from "../components/CTA";
 const About = () => {
   return (
-    <section className="max-container">
-      <h1 className="head-text">
+    <section className="max-container bg-black-500">
+      <h1 className="head-text text-yellow-100">
         Hello, I'm {""}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Habib
@@ -20,12 +20,12 @@ const About = () => {
         <p>Full Stack Developer from India.</p>
       </div>
       <div className="py-10 flex flex-col">
-        <h3 className="subhead-text">Weapons I Use</h3>
+        <h3 className="subhead-text text-gray-400">Weapons I Use</h3>
 
         <div className="flex flex-wrap mt-16 gap-12">
           {technologies.map((technology, index) => (
             <div key={index} className="block-container w-24 h-24">
-              <div className="btn-back rounded-xl" />
+              {/* <div className="btn-back rounded-xl" /> */}
               <div
                 className="w-28 h-28 btn-front rounded-xl flex justify-center items-center"
                 key={technology.name}
