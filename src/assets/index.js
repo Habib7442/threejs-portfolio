@@ -27,7 +27,11 @@ import cdac from "./cdac.png";
 import unschool from "./unschool.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
-import resume from "./cv.png"
+import resume from "./cv.png";
+import weather from "./weather.jpg";
+import weathersingle from "./weathersingle.jpg";
+import schoolsingle from "./schoolsingle.jpg";
+import school from "./school.jpg"
 
 export {
   netflix,
@@ -59,5 +63,9 @@ export {
   unschool,
   linkedin,
   github,
-  resume
+  resume,
+  weather,
+  weathersingle,
+  schoolsingle,
+  school
 };

@@ -9,6 +9,10 @@ import {
   blogImg,
   summarizer,
   youtubeDesktop,
+  weather,
+  weathersingle,
+  school,
+  schoolsingle
 } from "../assets";
 
 const projectData = [
@@ -105,6 +109,7 @@ const projectData = [
     github: "https://github.com/Habib7442/Youtube-2.0",
     liveUrl: "https://youtube-habib.netlify.app/",
   },
+
   {
     id: 7,
     img: myntra,
@@ -112,11 +117,37 @@ const projectData = [
     title: "Myntra Landing Page Clone",
     technologies: ["HTML", "CSS"],
 
-    description: [
-      "Landing page clone of Myntra."
-    ],
+    description: ["Landing page clone of Myntra."],
     github: "https://github.com/Habib7442/Myntra-clone",
     liveUrl: "https://myntraclone7442.netlify.app/",
+  },
+  {
+    id: 8,
+    img: weather,
+    singleImg: weathersingle,
+    title: "Weather Website",
+    technologies: ["HTML", "CSS", "JavaScript", "API"],
+    description: [
+      "This web application allows users to check the current weather for a specific location. It uses the OpenWeatherMap API to fetch weather data.",
+      "Display current weather conditions, including temperature, humidity, and wind speed.",
+      "Switch between temperature units (Celsius and Fahrenheit).",
+    ],
+    github: "https://github.com/Habib7442/weather",
+    liveUrl: "https://weather-app-habib.netlify.app/",
+  },
+  {
+    id: 9,
+    img: school,
+    singleImg: schoolsingle,
+    title: "School Website",
+    technologies: ["React JS", "Tailwind CSS", "Firebase"],
+    description: [
+      "This is a school website using React.js.",
+      "It is a responsive and user-friendly website.",
+      "It is a fully functional website.",
+    ],
+    github: "https://github.com/Habib7442/weather",
+    liveUrl: "https://jcbose.org.in/",
   },
 ];
 
