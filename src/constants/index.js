@@ -115,7 +115,7 @@ const social = [
   {
     name: "resume",
     icon: resume,
-    link: "https://firebasestorage.googleapis.com/v0/b/the-digital-diary.appspot.com/o/Resume.pdf?alt=media&token=982334d5-9ddf-420b-9f48-1ab6bccaf716",
+    link: "https://cloud.appwrite.io/v1/storage/buckets/64d5a5e6dc57eec596f2/files/6578055d6d5d856f5932/view?project=64a69dbd67db0755a992&mode=admin",
   }
 ]
 

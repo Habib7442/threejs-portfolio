@@ -5,7 +5,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import islandScene from "../assets/3d/island.glb";
 import { a } from "@react-spring/three";
 
-const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
+const Island = ({ isRotating, setIsRotating, setCurrentStage,scale, ...props }) => {
   const islandRef = useRef();
   // const textRef = useRef();
   const { gl, viewport } = useThree();
@@ -40,7 +40,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
       lastX.current = clientX;
 
-      rotationSpeed.current = delta * Math.PI * 0.01;
+      rotationSpeed.current = delta * Math.PI * 0.05;
     }
   };
 
@@ -75,7 +75,6 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
       const normalizedRotation =
         ((rotation % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
 
-      console.log(normalizedRotation);
 
       // Set the current stage based on the island's orientation
       switch (true) {
@@ -99,16 +98,16 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
 
   useEffect(() => {
     const canvas = gl.domElement;
-    canvas.addEventListener("pointerdown", handlePointerDown);
-    canvas.addEventListener("pointerup", handlePointerUp);
-    canvas.addEventListener("pointermove", handlePointerMove);
+    canvas.addEventListener("pointerdown", handlePointerDown, { passive: false });
+    canvas.addEventListener("pointerup", handlePointerUp, { passive: false });
+    canvas.addEventListener("pointermove", handlePointerMove, { passive: false });
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
 
     return () => {
-      canvas.removeEventListener("pointerdown", handlePointerDown);
-      canvas.removeEventListener("pointerup", handlePointerUp);
-      canvas.removeEventListener("pointermove", handlePointerMove);
+      canvas.removeEventListener("pointerdown", handlePointerDown, { passive: false });
+      canvas.removeEventListener("pointerup", handlePointerUp, { passive: false });
+      canvas.removeEventListener("pointermove", handlePointerMove, { passive: false });
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("keyup", handleKeyUp);
     };
@@ -121,7 +120,7 @@ const Island = ({ isRotating, setIsRotating, setCurrentStage, ...props }) => {
     handleKeyUp,
   ]);
   return (
-    <a.group ref={islandRef} {...props} dispose={null} scale={1.5}>
+    <a.group ref={islandRef} {...props} dispose={null} scale={scale}>
       <group rotation={[-Math.PI / 2, 0, 0]} scale={0.17}>
         <group rotation={[Math.PI / 2, 0, 0]}>
           <group position={[0, -11.11, 0]} scale={92.332}>

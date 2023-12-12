@@ -15,12 +15,12 @@ const SingleProject = ({ projectData }) => {
   };
 
   return (
-    <main className="w-full lg:h-screen h-full bg-slate-700">
+    <main className="w-full h-full bg-slate-700 relative pb-4">
       <section className="text-gray-300 body-font overflow-hidden">
         <div className="container px-5 py-16 mx-auto">
           <div className="lg:w-4/5 mx-auto flex flex-wrap">
             <div className="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-              <h1 className="text-gray-400 italic font-serif text-3xl title-font font-medium mb-4">
+              <h1 className="text-gray-400 mt-8 italic font-serif text-3xl title-font font-medium mb-4">
                 {project.title}
               </h1>
               <div className="flex mb-4">

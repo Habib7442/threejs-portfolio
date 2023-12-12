@@ -32,6 +32,8 @@ import weather from "./weather.jpg";
 import weathersingle from "./weathersingle.jpg";
 import schoolsingle from "./schoolsingle.jpg";
 import school from "./school.jpg"
+import astralai from "./astralai.jpg"
+import astralaisingle from "./astralaisingle.jpg"
 
 export {
   netflix,
@@ -67,5 +69,7 @@ export {
   weather,
   weathersingle,
   schoolsingle,
-  school
+  school,
+  astralai,
+  astralaisingle
 };

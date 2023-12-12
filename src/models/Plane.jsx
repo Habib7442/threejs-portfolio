@@ -2,7 +2,7 @@ import { useAnimations, useGLTF } from "@react-three/drei";
 import planeScene from "../assets/3d/planenew.glb";
 import { useEffect, useRef } from "react";
 
-const Plane = ({ isRotating, ...props }) => {
+const Plane = ({ isRotating,planePosition,planeScale, ...props }) => {
   const ref = useRef();
   const { scene, animations } = useGLTF(planeScene);
   const { actions } = useAnimations(animations, ref);
@@ -15,7 +15,7 @@ const Plane = ({ isRotating, ...props }) => {
   }, [actions, isRotating]);
   return (
     <mesh {...props} ref={ref}>
-      <primitive object={scene} scale={[0.5, 0.5, 0.5]} />
+      <primitive object={scene} scale={planeScale} position={planePosition} />
     </mesh>
   );
 };

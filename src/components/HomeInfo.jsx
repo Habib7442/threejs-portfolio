@@ -24,6 +24,7 @@ const renderContent = {
       <br />
       Full Stack Developer from India
       <img className="w-6 h-6 inline-block ml-2 mb-2" src="/indiamap.png" alt="" />
+      <p className="text-sm hidden lg:block">Use keyboard ➡️ keys to navigate</p>
     </h1>
   ),
   2: (

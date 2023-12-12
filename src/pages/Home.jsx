@@ -10,15 +10,16 @@ import { social } from "../constants";
 const Home = () => {
   const [isRotating, setIsRotating] = useState(false);
   const [currentStage, setCurrentStage] = useState(1);
+  const [scale, setScale] = useState(1.5);
   const adjustIslandForScreenSize = () => {
     let screenScale = null;
     let screenPosition = [0, -6.5, -43];
-    let rotation = [0.1, 4.7, 0];
+    let rotation = [0.3, 4.7, 0];
 
     if (window.innerWidth < 768) {
-      screenScale = [0.9, 0.9, 0.9];
+      screenScale = [1, 1, 1];
     } else {
-      screenScale = [1.2, 1.2, 1.2];
+      screenScale = [1.5, 1.5, 1.5];
     }
     return [screenScale, screenPosition, rotation];
   };
@@ -26,11 +27,11 @@ const Home = () => {
     let screenScale, screenPosition;
 
     if (window.innerWidth < 768) {
-      screenScale = [1.5, 1.5, 1.5];
+      screenScale = [0.5, 0.5, 0.5];
       screenPosition = [0, -1.5, 0];
     } else {
-      screenScale = [3, 3, 3];
-      screenPosition = [0, -4, -4];
+      screenScale = [0.8, 0.8, 0.8];
+      screenPosition = [-2, -2, -1];
     }
     return [screenScale, screenPosition];
   };
@@ -40,13 +41,13 @@ const Home = () => {
   const [planeScale, planePosition] = adjustPlaneForScreenSize();
   return (
     <>
-      <section className="w-full h-screen relative">
+      <section className="w-full h-screen relative overflow-hidden">
         <div className="absolute top-20 left-0 right-0 z-10 flex items-center justify-center">
           {currentStage && <HomeInfo currentStage={currentStage} />}
           <div className="glassmorphism p-2 flex flex-col gap-4 fixed top-56 right-0 mt">
             {social.map((item, index) => (
               <a key={item.name} href={item.link}>
-              <img className="w-10" src={item.icon} alt="" />
+              <img className="lg:w-10 w-5" src={item.icon} alt="" />
               </a>
             ))}
           </div>

@@ -13,7 +13,7 @@ const About = () => {
         Hello, I'm {""}
         <span className="blue-gradient_text font-semibold drop-shadow">
           Habib
-        </span>
+        </span>🙋
       </h1>
 
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
@@ -27,10 +27,11 @@ const About = () => {
             <div key={index} className="block-container w-24 h-24">
               {/* <div className="btn-back rounded-xl" /> */}
               <div
-                className="w-28 h-28 btn-front rounded-xl flex justify-center items-center"
+                className="w-28 h-28 btn-front rounded-xl flex flex-col justify-center items-center"
                 key={technology.name}
               >
                 <BallCanvas icon={technology.icon} />
+              <p className="text-gray-300 text-xs">{technology.name}</p>
               </div>
             </div>
           ))}
@@ -38,7 +39,7 @@ const About = () => {
       </div>
 
       <div className="py-1">
-        <h3 className="subhead-text">Work Experience</h3>
+        <h3 className="subhead-text text-gray-400">Work Experience</h3>
         <div className="mt-12 flex">
           <VerticalTimeline>
             {experiences.map((experience, index) => (

@@ -12,12 +12,29 @@ import {
   weather,
   weathersingle,
   school,
-  schoolsingle
+  schoolsingle,
+  astralai,
+  astralaisingle
 } from "../assets";
 
 const projectData = [
   {
     id: 1,
+    img: astralai,
+    singleImg: astralaisingle,
+    title: "AstralAI",
+    technologies: ["Next JS", "Prisma", "Tailwind CSS", "Shedcn"],
+    description: [
+      "Developed a SaaS application for image-driven communication, leveraging GPT-4 Vision API",
+      "Implemented user authentication functionality, allowing users to log in and log out using clerk.",
+      "Integrated Stripe payment methods for seamless and secure transactions.",
+      "Utilized Prisma database to store data",
+    ],
+    github: "",
+    liveUrl: "https://astralai.vercel.app/",
+  },
+  {
+    id: 2,
     img: blog,
     singleImg: blogImg,
     title: "Blog Website",
@@ -34,7 +51,7 @@ const projectData = [
     liveUrl: "https://the-digital-diary.web.app/",
   },
   {
-    id: 2,
+    id: 3,
     img: netflix,
     singleImg: netflix,
     title: "Netflix Clone",
@@ -47,7 +64,7 @@ const projectData = [
     liveUrl: "https://net-clone-224.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     img: quickPicks,
     singleImg: quickPicks,
     title: "Quick Picks",
@@ -70,7 +87,7 @@ const projectData = [
     liveUrl: "https://quickpicks123.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     img: article,
     singleImg: summarizer,
     title: "Article Summarizer and Extractor",
@@ -85,7 +102,7 @@ const projectData = [
     liveUrl: "https://articlesummarease.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     img: fashion,
     singleImg: fashion,
     title: "Fashion Landing Page",
@@ -96,7 +113,7 @@ const projectData = [
     liveUrl: "https://lnkd.in/dv2pMPdv",
   },
   {
-    id: 6,
+    id: 7,
     img: youtube,
     singleImg: youtubeDesktop,
     title: "Youtube Clone",
@@ -111,7 +128,7 @@ const projectData = [
   },
 
   {
-    id: 7,
+    id: 8,
     img: myntra,
     singleImg: myntra,
     title: "Myntra Landing Page Clone",
@@ -122,7 +139,7 @@ const projectData = [
     liveUrl: "https://myntraclone7442.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     img: weather,
     singleImg: weathersingle,
     title: "Weather Website",
@@ -136,7 +153,7 @@ const projectData = [
     liveUrl: "https://weather-app-habib.netlify.app/",
   },
   {
-    id: 9,
+    id: 10,
     img: school,
     singleImg: schoolsingle,
     title: "School Website",
