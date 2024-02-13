@@ -34,6 +34,7 @@ import schoolsingle from "./schoolsingle.jpg";
 import school from "./school.jpg"
 import astralai from "./astralai.jpg"
 import astralaisingle from "./astralaisingle.jpg"
+import funkyframe from "./funkyframe.jpg"
 
 export {
   netflix,
@@ -71,5 +72,6 @@ export {
   schoolsingle,
   school,
   astralai,
-  astralaisingle
+  astralaisingle,
+  funkyframe
 };

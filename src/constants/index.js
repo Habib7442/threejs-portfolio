@@ -115,7 +115,7 @@ const social = [
   {
     name: "resume",
     icon: resume,
-    link: "https://cloud.appwrite.io/v1/storage/buckets/64d5a5e6dc57eec596f2/files/6578055d6d5d856f5932/view?project=64a69dbd67db0755a992&mode=admin",
+    link: "https://cloud.appwrite.io/v1/storage/buckets/64d5a5e6dc57eec596f2/files/65cadce6a940d27747b9/view?project=64a69dbd67db0755a992&mode=admin",
   }
 ]
 

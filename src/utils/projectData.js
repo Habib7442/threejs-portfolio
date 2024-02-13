@@ -13,25 +13,23 @@ import {
   weathersingle,
   school,
   schoolsingle,
-  astralai,
-  astralaisingle
+  funkyframe
 } from "../assets";
 
 const projectData = [
   {
     id: 1,
-    img: astralai,
-    singleImg: astralaisingle,
-    title: "AstralAI",
-    technologies: ["Next JS", "Prisma", "Tailwind CSS", "Shedcn"],
+    img: funkyframe,
+    singleImg: funkyframe,
+    title: "FunkyFrame",
+    technologies: ["Next JS", "Liveblocks", "Tailwind CSS","Google Gemini", "Shadcn"],
     description: [
-      "Developed a SaaS application for image-driven communication, leveraging GPT-4 Vision API",
-      "Implemented user authentication functionality, allowing users to log in and log out using clerk.",
-      "Integrated Stripe payment methods for seamless and secure transactions.",
-      "Utilized Prisma database to store data",
+      "Spearheaded the development of Funky Frame, a cutting-edge web application for collaborative design",
+      "Integrated live collaboration features using Liveblocks and implemented authentication functionality with Clerk for secure user access",
+      "Incorporated Google Gemini AI model to generate insightful captions for images and facilitated real-time reactions and comments for dynamic user engagement.",
     ],
-    github: "",
-    liveUrl: "https://astralai.vercel.app/",
+    github: "https://github.com/Habib7442/funky-frame",
+    liveUrl: "https://funky-frame.vercel.app/",
   },
   {
     id: 2,
