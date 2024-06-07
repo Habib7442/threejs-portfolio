@@ -4,7 +4,7 @@ import ProjectList from "../components/ProjectList"
 const Projects = () => {
   return (
     <div>
-      <Parallax />
+      {/* <Parallax /> */}
       <ProjectList />
     </div>
   )

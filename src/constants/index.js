@@ -15,7 +15,7 @@ import {
   unschool,
   linkedin,
   github,
-  resume
+  resume,
 } from "../assets";
 
 const technologies = [
@@ -116,7 +116,28 @@ const social = [
     name: "resume",
     icon: resume,
     link: "https://cloud.appwrite.io/v1/storage/buckets/64d5a5e6dc57eec596f2/files/65cadce6a940d27747b9/view?project=64a69dbd67db0755a992&mode=admin",
-  }
-]
+  },
+];
 
-export { technologies, experiences, social };
+const navigationButton = [
+  {
+    name: "Web development",
+    icon: "",
+    bgColor: "#FF6347", // Tomato
+    textColor: "#FFFFFF", // White
+  },
+  {
+    name: "App development",
+    icon: "",
+    bgColor: "#32CD32", // LimeGreen
+    textColor: "#FFFFFF", // Black
+  },
+  {
+    name: "Graphics design",
+    icon: "",
+    bgColor: "#1E90FF", // DodgerBlue
+    textColor: "#FFFFFF", // White
+  },
+];
+
+export { technologies, experiences, social, navigationButton };

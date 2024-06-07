@@ -19,7 +19,7 @@ const Navbar = () => {
         >
           📄
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/projects"
           style={{fontFamily: "Old London"}}
           className={({ isActive }) =>
@@ -36,7 +36,7 @@ const Navbar = () => {
           }
         >
           😐
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to="/all-reviews"
           style={{fontFamily: "Old London"}}

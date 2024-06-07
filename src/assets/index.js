@@ -1,4 +1,3 @@
-import netflix from "./netflixMob.jpg";
 import quickPicks from "./quickpicks.png";
 import blog from "./blog.png";
 import article from "./article.png";
@@ -35,6 +34,10 @@ import school from "./school.jpg"
 import astralai from "./astralai.jpg"
 import astralaisingle from "./astralaisingle.jpg"
 import funkyframe from "./funkyframe.jpg"
+import promptwar from "./promptwar.jpg"
+import promptwar2 from "./promptwar-2.jpg"
+import promptwar3 from "./promptwar-3.jpg"
+import netflix from "./netflix.png"
 
 export {
   netflix,
@@ -73,5 +76,8 @@ export {
   school,
   astralai,
   astralaisingle,
-  funkyframe
+  funkyframe,
+  promptwar,
+  promptwar2,
+  promptwar3
 };

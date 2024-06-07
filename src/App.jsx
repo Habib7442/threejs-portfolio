@@ -1,15 +1,18 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import { Home, About, Projects, Contact } from "./pages";
+import { db } from "./firebase";
+import { ToastContainer } from "react-toastify";
+import Navbar from "./components/Navbar";
 import projectData from "./utils/projectData";
 import SingleProject from "./pages/SingleProject";
 import ReviewForm from "./pages/ReviewForm";
-import { db } from "./firebase";
 import AllReviews from "./pages/AllReviews";
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
-    <main className=" bg-slate-200 font-bold">
+    <main className=" bg-slate-900 font-bold">
+      <ToastContainer />
       <Router>
         <Navbar />
         <Routes>

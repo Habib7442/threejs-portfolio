@@ -13,16 +13,37 @@ import {
   weathersingle,
   school,
   schoolsingle,
-  funkyframe
+  funkyframe,
+  promptwar,
+  promptwar2,
+  promptwar3,
 } from "../assets";
 
 const projectData = [
   {
-    id: 1,
+    img: promptwar,
+    singleImg: [promptwar, promptwar2, promptwar3],
+    title: "Promptwar",
+    technologies: ["Next JS", "Appwrite", "Tailwind CSS", "Shadcn"],
+    description: [
+      "Art Showcase Platform: Engineered a feature for artists to upload and publicly display their AI-generated artwork.",
+      "Creative Challenges: Orchestrated weekly thematic challenges to encourage user engagement and creativity.",
+      "Community Leaderboard: Implemented a competitive leaderboard to highlight and reward top-performing artists.",
+    ],
+    github: "https://github.com/Habib7442/prompt-war",
+    liveUrl: "https://promptwar.vercel.app/",
+  },
+  {
     img: funkyframe,
     singleImg: funkyframe,
     title: "FunkyFrame",
-    technologies: ["Next JS", "Liveblocks", "Tailwind CSS","Google Gemini", "Shadcn"],
+    technologies: [
+      "Next JS",
+      "Liveblocks",
+      "Tailwind CSS",
+      "Google Gemini",
+      "Shadcn",
+    ],
     description: [
       "Spearheaded the development of Funky Frame, a cutting-edge web application for collaborative design",
       "Integrated live collaboration features using Liveblocks and implemented authentication functionality with Clerk for secure user access",
@@ -32,7 +53,6 @@ const projectData = [
     liveUrl: "https://funky-frame.vercel.app/",
   },
   {
-    id: 2,
     img: blog,
     singleImg: blogImg,
     title: "Blog Website",
@@ -49,7 +69,6 @@ const projectData = [
     liveUrl: "https://the-digital-diary.web.app/",
   },
   {
-    id: 3,
     img: netflix,
     singleImg: netflix,
     title: "Netflix Clone",
@@ -62,7 +81,44 @@ const projectData = [
     liveUrl: "https://net-clone-224.netlify.app/",
   },
   {
-    id: 4,
+    img: youtube,
+    singleImg: youtubeDesktop,
+    title: "Youtube Clone",
+    technologies: ["React JS", "Material UI", "API"],
+    description: [
+      "Created a YouTube clone using React.js.",
+      "Integrated with external APIs to retrieve and display data on the front-end.",
+      "Designed a sleek and dynamic user interface with Material UI and CSS.",
+    ],
+    github: "https://github.com/Habib7442/Youtube-2.0",
+    liveUrl: "https://youtube-habib.netlify.app/",
+  },
+  
+  {
+    img: summarizer,
+    singleImg: summarizer,
+    title: "Article Summarizer and Extractor",
+    technologies: ["React JS", "Redux", "Tailwind CSS", "API"],
+    description: [
+      "Summarization: Quickly generate concise summaries of lengthy articles.",
+      "Content Extraction: Extract relevant content from web pages.",
+      "User-Friendly Interface: A simple and intuitive user interface for easy navigation.",
+      "Responsive Design: Works seamlessly on both desktop and mobile devices.",
+    ],
+    github: "https://github.com/Habib7442/article-summarizer-extractor",
+    liveUrl: "https://articlesummarease.netlify.app/",
+  },
+  {
+    img: fashion,
+    singleImg: fashion,
+    title: "Fashion Landing Page",
+    technologies: ["HTML", "CSS", "JavaScript", "Sheryjs"],
+    description: ["Fashion website Landing Page"],
+    github:
+      "https://github.com/Habib7442/landing-pages/tree/master/Fashion%20Website",
+    liveUrl: "https://lnkd.in/dv2pMPdv",
+  },
+  {
     img: quickPicks,
     singleImg: quickPicks,
     title: "Quick Picks",
@@ -84,49 +140,8 @@ const projectData = [
     github: "https://github.com/Habib7442/QuickPicks",
     liveUrl: "https://quickpicks123.netlify.app/",
   },
-  {
-    id: 5,
-    img: article,
-    singleImg: summarizer,
-    title: "Article Summarizer and Extractor",
-    technologies: ["React JS", "Redux", "Tailwind CSS", "API"],
-    description: [
-      "Summarization: Quickly generate concise summaries of lengthy articles.",
-      "Content Extraction: Extract relevant content from web pages.",
-      "User-Friendly Interface: A simple and intuitive user interface for easy navigation.",
-      "Responsive Design: Works seamlessly on both desktop and mobile devices.",
-    ],
-    github: "https://github.com/Habib7442/article-summarizer-extractor",
-    liveUrl: "https://articlesummarease.netlify.app/",
-  },
-  {
-    id: 6,
-    img: fashion,
-    singleImg: fashion,
-    title: "Fashion Landing Page",
-    technologies: ["HTML", "CSS", "JavaScript", "Sheryjs"],
-    description: ["Fashion website Landing Page"],
-    github:
-      "https://github.com/Habib7442/landing-pages/tree/master/Fashion%20Website",
-    liveUrl: "https://lnkd.in/dv2pMPdv",
-  },
-  {
-    id: 7,
-    img: youtube,
-    singleImg: youtubeDesktop,
-    title: "Youtube Clone",
-    technologies: ["React JS", "Material UI", "API"],
-    description: [
-      "Created a YouTube clone using React.js.",
-      "Integrated with external APIs to retrieve and display data on the front-end.",
-      "Designed a sleek and dynamic user interface with Material UI and CSS.",
-    ],
-    github: "https://github.com/Habib7442/Youtube-2.0",
-    liveUrl: "https://youtube-habib.netlify.app/",
-  },
 
   {
-    id: 8,
     img: myntra,
     singleImg: myntra,
     title: "Myntra Landing Page Clone",
@@ -137,7 +152,6 @@ const projectData = [
     liveUrl: "https://myntraclone7442.netlify.app/",
   },
   {
-    id: 9,
     img: weather,
     singleImg: weathersingle,
     title: "Weather Website",
@@ -151,7 +165,6 @@ const projectData = [
     liveUrl: "https://weather-app-habib.netlify.app/",
   },
   {
-    id: 10,
     img: school,
     singleImg: schoolsingle,
     title: "School Website",
