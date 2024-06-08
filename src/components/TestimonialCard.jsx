@@ -15,8 +15,7 @@ const TestimonialCard = () => {
       (snapshot) => {
         setReviews(snapshot.docs.map((doc) => doc.data()));
         return getReviews;
-      },
-      []
+      }
     );
   }, []);
 

@@ -1,20 +1,17 @@
-import { useEffect } from "react";
 import { social } from "../constants";
-import { toast } from "react-toastify";
 import Hero from "../components/Hero";
 import About from "./About";
 import Projects from "./Projects";
 import TestimonialCard from "../components/TestimonialCard";
 import CTA from "../components/CTA";
+import { useLocation } from "react-router-dom";
 
 const Home = () => {
-  useEffect(() => {
-    toast("Welcome");
-  }, []);
+  const location = useLocation();
 
   return (
     <>
-      <section className="w-full h-full relative overflow-hidden">
+      <section key={location.pathname} className="w-full h-full relative overflow-hidden">
         <div className="top-20 left-0 right-0 z-10 flex items-center justify-center h-screen">
           <div className="glassmorphism p-2 flex flex-col gap-4 fixed top-56 right-0 mt">
             {social.map((item, index) => (
