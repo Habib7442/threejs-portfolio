@@ -53,7 +53,7 @@ const ProjectGrid = ({ data }) => {
           </Card>
           <div className="flex justify-between mt-2">
             <p className="text-gray-400 flex items-center">{item.title}</p>
-            <Button variant="outlined" onClick={() => handleClickOpen(index)}>
+            <Button color="secondary" onClick={() => handleClickOpen(index)}>
               Explore
             </Button>
           </div>

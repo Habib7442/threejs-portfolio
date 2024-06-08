@@ -3,7 +3,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { Suspense, useEffect, useState } from "react";
 import { db } from "../firebase";
 import Loader from "../components/Loader";
-// import Stars from "../components/Stars";
+import Stars from "../components/Stars";
 
 const AllReviews = () => {
   const [reviews, setReviews] = useState([]);

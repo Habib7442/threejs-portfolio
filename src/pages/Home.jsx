@@ -1,9 +1,17 @@
-import Hero from "../components/Hero";
+import { useEffect } from "react";
 import { social } from "../constants";
+import { toast } from "react-toastify";
+import Hero from "../components/Hero";
 import About from "./About";
 import Projects from "./Projects";
+import TestimonialCard from "../components/TestimonialCard";
+import CTA from "../components/CTA";
 
 const Home = () => {
+  useEffect(() => {
+    toast("Welcome");
+  }, []);
+
   return (
     <>
       <section className="w-full h-full relative overflow-hidden">
@@ -22,6 +30,13 @@ const Home = () => {
         </div>
         <div className="w-full h-full bg-slate-900">
           <About />
+        </div>
+        <div className="w-full h-full bg-slate-900 mt-6">
+          <TestimonialCard />
+        </div>
+        <hr className="px-2" />
+        <div className="w-full h-full bg-slate-900 px-4 mb-2">
+          <CTA />
         </div>
       </section>
     </>

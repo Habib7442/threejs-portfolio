@@ -26,9 +26,9 @@ const projectData = [
     title: "Promptwar",
     technologies: ["Next JS", "Appwrite", "Tailwind CSS", "Shadcn"],
     description: [
-      "Art Showcase Platform: Engineered a feature for artists to upload and publicly display their AI-generated artwork.",
+      "Art Showcase Platform: Engineered a feature for creators to upload and publicly display their AI-generated artwork.",
       "Creative Challenges: Orchestrated weekly thematic challenges to encourage user engagement and creativity.",
-      "Community Leaderboard: Implemented a competitive leaderboard to highlight and reward top-performing artists.",
+      "Community Leaderboard: Implemented a competitive leaderboard to highlight and reward top-performing creators.",
     ],
     github: "https://github.com/Habib7442/prompt-war",
     liveUrl: "https://promptwar.vercel.app/",
